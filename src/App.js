@@ -12,18 +12,9 @@ const HatsPage = () => (
 function App() {
   return (
     <div>
-      <Route path="/" component={HomePage} />
+      <Route exact path="/" component={HomePage} />
       <Route path="/hats" component={HatsPage} />
     </div>
   );
 }
-// function App() {
-//   return (
-//     <div>
-//       <HomePage/>
-//       <HatsPage/>
-//     </div>
-//   );
-// }
-
 export default App;
