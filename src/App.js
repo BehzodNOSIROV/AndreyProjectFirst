@@ -1,6 +1,6 @@
 import React from "react";
+import { Route } from "react-router-dom";
 import "./App.css";
-// import { Route } from "react-router-dom"
 import HomePage from "./pages/homepage/homepage.componenet";
 
 const HatsPage = () => (
@@ -9,21 +9,21 @@ const HatsPage = () => (
   </div>
 );
 
-// function App() {
-//   return (
-//     <div>
-//       <Route path="/" component={HomePage} />
-//       <Route path="/hats" component={HatsPage} />
-//     </div>
-//   );
-// }
 function App() {
   return (
     <div>
-      <HomePage/>
-      <HatsPage/>
+      <Route path="/" component={HomePage} />
+      <Route path="/hats" component={HatsPage} />
     </div>
   );
 }
+// function App() {
+//   return (
+//     <div>
+//       <HomePage/>
+//       <HatsPage/>
+//     </div>
+//   );
+// }
 
 export default App;
