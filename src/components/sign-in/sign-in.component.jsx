@@ -47,7 +47,7 @@ class SignIn extends React.Component {
             handleChange={this.handleChange}
             required
           />
-          <CustomButton type="submit">Sing In</CustomButton>
+        <CustomButton type="submit"> Sign in </CustomButton>
         </form>
       </div>
     );
